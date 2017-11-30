@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author Ruixian
  * @date 2017/11/16
  */
-@FeignClient(name = "scdemo2")
+//@FeignClient(name = "scdemo2")
 public interface UserFeignClient {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     User findById(@PathVariable("id") Long id);
